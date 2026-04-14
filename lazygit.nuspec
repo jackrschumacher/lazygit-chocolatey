@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>lazygit</id>
+    <version>0.61.1</version> <title>lazygit</title>
+    <authors>Jesse Duffield</authors>
+    <projectUrl>https://github.com/jesseduffield/lazygit</projectUrl>
+    <tags>lazygit git terminal cli</tags>
+    <summary>Simple terminal UI for git commands</summary>
+    <description>A simple terminal UI for git commands, written in Go with the gocui library.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

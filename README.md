@@ -1,6 +1,6 @@
 # Lazygit Native Chocolatey Package
 
-[![GitHub Release](https://img.shields.io/github/v/release/jackrschumacher/lazygit-choco-latest)](https://github.com/jackrschumacher/benchmark-playbook/lazygit-choco-latest) 
+[![GitHub Release](https://img.shields.io/github/v/release/jackrschumacher/lazygit-choco)](https://github.com/jackrschumacher/lazygit-choco) 
 
 This repository contains the build scripts for a native Windows Chocolatey package of [lazygit](https://github.com/jesseduffield/lazygit), a simple terminal UI for git commands. 
 
@@ -11,7 +11,7 @@ This repository contains the build scripts for a native Windows Chocolatey packa
 
 **Prerequisites:** You must have [Chocolatey](https://chocolatey.org/install) installed and be running an elevated PowerShell prompt (Run as Administrator).
 
-1. Go to the **[Releases](../../releases)** page of this repository.
+1. Go to the **[Releases](../../releases)** page of this repository.	
 2. Download the latest `lazygit.<version>.nupkg` file (e.g., `lazygit.0.61.1.nupkg`).
 3. Open an Administrator PowerShell prompt in the folder where you downloaded the file (usually your Downloads folder).
 4. Run the local install command:

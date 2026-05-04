@@ -8,6 +8,8 @@
     <tags>lazygit git terminal cli</tags>
     <summary>Simple terminal UI for git commands</summary>
     <description>A simple terminal UI for git commands, written in Go with the gocui library.</description>
+    <owners>Jack Schumacher</owners>
+    <iconUrl>https://user-images.githubusercontent.com/8456633/174470852-339b5011-5800-4bb9-a628-ff230aa8cd4e.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

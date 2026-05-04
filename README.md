@@ -17,6 +17,7 @@ This repository contains the build scripts for a native Windows Chocolatey packa
 4. Run the local install command:
    ```powershell
    choco install lazygit -s . -y
+   ```
 
 
 ## How to Release an Update (Maintainer Guide)

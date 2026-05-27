@@ -18,7 +18,10 @@ This repository contains the build scripts for a native Windows Chocolatey packa
    ```powershell
    choco install lazygit -s . -y
    ```
-
+5. Upgrading:
+      ```powershell
+      choco upgrade lazygit -s .
+      ```
 
 ## How to Release an Update (Maintainer Guide)
 
@@ -28,8 +31,14 @@ When a new version of lazygit drops, follow these steps to update the package:
 Open `lazygit.nuspec` and update the `<version>` tag to match the new release.
 
 ### 2. Fetch the New Checksum
-Find the Windows x86_64 SHA256 hash from the official lazygit releases. You can extract it using PowerShell (replace `0.62.0` with the target version):
+Find the Windows x86_64 SHA256 hash from the official lazygit releases - it is often in the `checksums.txt` file in the releases page. You can extract it using PowerShell (replace `0.62.0` with the target version):
 ```powershell
 $version = "0.62.0"
 $url = "[https://github.com/jesseduffield/lazygit/releases/download/v$version/checksums.txt](https://github.com/jesseduffield/lazygit/releases/download/v$version/checksums.txt)"
 (Invoke-WebRequest $url).Content -split "`n" | Select-String "Windows_x86_64.zip"
+```
+
+### Pack the .nuspec
+```powershell
+choco pack lazygit.nuspec
+```

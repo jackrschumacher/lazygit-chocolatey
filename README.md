@@ -20,7 +20,7 @@ This repository contains the build scripts for a native Windows Chocolatey packa
    ```
 5. Upgrading:
       ```powershell
-      choco upgrade lazygit -s .
+      choco upgrade lazygit -s . -y
       ```
 
 ## How to Release an Update (Maintainer Guide)

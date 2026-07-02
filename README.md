@@ -1,6 +1,6 @@
 # Lazygit Native Chocolatey Package
 
-[![GitHub Release](https://img.shields.io/github/v/release/jackrschumacher/lazygit-chocolatey)](https://github.com/jackrschumacher/lazygit-chocolatey) 
+[![GitHub Release](https://img.shields.io/github/v/release/jackrschumacher/lazygit-chocolatey)](https://github.com/jackrschumacher/lazygit-chocolatey/releases) 
 
 This repository contains the build scripts for a native Windows Chocolatey package of [lazygit](https://github.com/jesseduffield/lazygit), a simple terminal UI for git commands. 
 

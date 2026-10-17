@@ -2,22 +2,22 @@
 
 $packageName = 'lazygit'
 $toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$version     = '0.66.1'
+$version     = '0.66.2'
 
 # 1. 32-bit (x86) Variables
 $url32      = "https://github.com/jesseduffield/lazygit/releases/download/v$version/lazygit_${version}_windows_32-bit.zip"
-$checksum32 = '3949e01c1928e72b5f3c2a85cd1415e91950de62debeea00f6572100e2df8072'
+$checksum32 = 'd144ebd3cb0dded98870eaa233304e917788f4710ec89d4af1924fb3c189cc43'
 
 # 2. 64-bit (x64) Variables
 $url64      = "https://github.com/jesseduffield/lazygit/releases/download/v$version/lazygit_${version}_windows_x86_64.zip"
-$checksum64 = '1a23fb8aed2e757085ca0b1c63dd2a26a76618c5159e68cf7dd375154838cb2c'
+$checksum64 = '8b1e2194c2d8ac660f0a132cb4384e9d2fe1405217a144e280df16383c18d45c'
 
 # 3. ARM64 Variables (Overrides x64 if ARM architecture is detected)
 $isArm64 = ($env:PROCESSOR_ARCHITECTURE -match 'ARM64') -or ($env:PROCESSOR_ARCHITEW6432 -match 'ARM64')
 
 if ($isArm64) {
     $url64      = "https://github.com/jesseduffield/lazygit/releases/download/v$version/lazygit_${version}_windows_arm64.zip"
-    $checksum64 = '6728eb622860c3554c85fefb16d515c666487df19a5bdfa83a5b65d8f87e843e'
+    $checksum64 = '1da981a35ed26231d01c6cd8cccc016f365b78d6235a3d7906334719f580e851'
 }
 
 $packageArgs = @{
